@@ -4,11 +4,10 @@
     <span class="zhi-ding"></span>
     <% } %>
 
-    <!--都不显示图片-->
-    <% if (!has_thumbnail(post) && has_thumbnail(post)) { %>
+    <% if (post.cover && has_thumbnail(post)) { %>
     <div class="card-image">
         <%- index ? '<a href="' + url_for(post.link ? post.link : post.path) + '"' : '<span ' %> class="image is-7by1">
-            <img class="thumbnail" src="<%= get_thumbnail(post) %>" alt="<%= post.title %>">
+            <img class="thumbnail" src="<%= post.coverImg || get_thumbnail(post)%>" alt="<%= post.title %>">
         <%- index ? '</a>' : '</span>' %>
     </div>
     <% } %>

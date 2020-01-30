@@ -1,4 +1,5 @@
 module.exports = (ctx, locals) => {
+    locals.layout = true;
     const { layout, content } = ctx.page;
     const { get_config } = ctx;
     if (get_config('toc') !== true || (layout !== 'page' && layout !== 'post')) {

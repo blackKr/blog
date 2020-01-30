@@ -99,7 +99,6 @@ ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
 theme: hexo-theme-icarus-master
 
 # Deployment
@@ -124,3 +123,13 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
+
+toc:
+  maxdepth: 3
+  class: toc
+  slugify: transliteration
+  decodeEntities: false
+  anchor:
+    position: after
+    symbol: '#'
+    style: header-anchor

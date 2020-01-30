@@ -7,7 +7,7 @@ thumbnail: /images/posts/hexo.png
 categories: [命令]
 top: 7
 cover: true
-coverImg: /images/posts/hexo.png
+coverImg: /images/posts/shell.png
 ---
 
 
